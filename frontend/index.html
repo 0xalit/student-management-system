@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Management</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Student Management</h1>
+    <div class="form-section">
+  <div class="input-row">
+    <input type="number" id="studentId" placeholder="ID (for update)" />
+    <input type="text" id="studentName" placeholder="Name" />
+    <input type="email" id="studentEmail" placeholder="Email" />
+    <input type="number" id="studentAge" placeholder="Age" />
+  </div>
+  <div class="button-row">
+    <button onclick="addStudent()">Add Student</button>
+    <button onclick="updateStudent()">Update Student</button>
+  </div>
+</div>
+
+
+    <!-- Search Student by ID -->
+    <div class="search-section">
+    <input type="number" id="searchIdInput" placeholder="Enter Student ID" />
+      <button onclick="checkStudent()">Check Student</button>
+      <p id="searchResult"></p>
+    </div>
+
+    <!-- Get All Students -->
+    <div class="getall-section">
+      <!-- <button onclick="getAllStudents()">Get All Students</button> -->
+      <table id="studentsTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th> 
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
