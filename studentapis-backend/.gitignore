@@ -30,4 +30,5 @@ build/
 !**/src/test/**/build/
 
 /src/main/resources/
+
 /src/test/
